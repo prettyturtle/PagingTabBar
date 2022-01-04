@@ -20,7 +20,7 @@ class PagingTabBar: UIView {
     
     weak var delegate: PagingDelegate?
     
-    private lazy var collectionView: UICollectionView = {
+    lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal // scrollDirection의 기본값은 .vertical이다
         
@@ -44,6 +44,7 @@ class PagingTabBar: UIView {
         self.categoryTitleList = categoryTitleList
         super.init(frame: .zero)
         setupLayout()
+        collectionView.selectItem(at: IndexPath(row: 0, section: 0), animated: true, scrollPosition: []) // 처음에 첫 탭에 포커싱
     }
     
     required init?(coder: NSCoder) {
@@ -54,6 +55,7 @@ class PagingTabBar: UIView {
 extension PagingTabBar: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         delegate?.didTapPagingTabBarCell(scrollTo: indexPath)
+        collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
     }
 }
 
