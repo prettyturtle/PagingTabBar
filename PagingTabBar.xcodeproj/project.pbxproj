@@ -15,6 +15,8 @@
 		6B889B7727840F3A00E7FDF7 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6B889B7627840F3A00E7FDF7 /* SnapKit */; };
 		6B889B792784100200E7FDF7 /* PagingTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B889B782784100200E7FDF7 /* PagingTabBar.swift */; };
 		6B889B7B2784130B00E7FDF7 /* PagingTabBarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B889B7A2784130B00E7FDF7 /* PagingTabBarCell.swift */; };
+		6B889B7F278428BC00E7FDF7 /* PagingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B889B7E278428BC00E7FDF7 /* PagingView.swift */; };
+		6B889B8227842A9A00E7FDF7 /* PagingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B889B8127842A9A00E7FDF7 /* PagingCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		6B889B6F27840E5D00E7FDF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B889B782784100200E7FDF7 /* PagingTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingTabBar.swift; sourceTree = "<group>"; };
 		6B889B7A2784130B00E7FDF7 /* PagingTabBarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingTabBarCell.swift; sourceTree = "<group>"; };
+		6B889B7E278428BC00E7FDF7 /* PagingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingView.swift; sourceTree = "<group>"; };
+		6B889B8127842A9A00E7FDF7 /* PagingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,8 +88,18 @@
 			children = (
 				6B889B6527840E5B00E7FDF7 /* MainViewController.swift */,
 				6B889B7C2784280A00E7FDF7 /* PagingTabBar */,
+				6B889B80278428C600E7FDF7 /* PagingView */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		6B889B80278428C600E7FDF7 /* PagingView */ = {
+			isa = PBXGroup;
+			children = (
+				6B889B7E278428BC00E7FDF7 /* PagingView.swift */,
+				6B889B8127842A9A00E7FDF7 /* PagingCollectionViewCell.swift */,
+			);
+			path = PagingView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,11 +178,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B889B7F278428BC00E7FDF7 /* PagingView.swift in Sources */,
 				6B889B6627840E5B00E7FDF7 /* MainViewController.swift in Sources */,
 				6B889B7B2784130B00E7FDF7 /* PagingTabBarCell.swift in Sources */,
 				6B889B6227840E5B00E7FDF7 /* AppDelegate.swift in Sources */,
 				6B889B6427840E5B00E7FDF7 /* SceneDelegate.swift in Sources */,
 				6B889B792784100200E7FDF7 /* PagingTabBar.swift in Sources */,
+				6B889B8227842A9A00E7FDF7 /* PagingCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
