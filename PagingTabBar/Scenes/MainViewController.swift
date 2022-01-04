@@ -13,7 +13,7 @@ class MainViewController: UIViewController {
     private let categoryTitleList = [ "추천", "신상품", "베스트", "알뜰쇼핑", "특가/혜택" ]
     
     private lazy var pagingTabBar = PagingTabBar(categoryTitleList: categoryTitleList)
-    private lazy var pagingView = PagingView(categoryTitleList: categoryTitleList)
+    private lazy var pagingView = PagingView(categoryTitleList: categoryTitleList, pagingTabBar: pagingTabBar)
     
     override func viewDidLoad() {
         super.viewDidLoad()

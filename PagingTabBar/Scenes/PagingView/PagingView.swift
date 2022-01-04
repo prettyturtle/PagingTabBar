@@ -12,6 +12,8 @@ class PagingView: UIView {
     
     private let categoryTitleList: [String]
     
+    private let pagingTabBar: PagingTabBar
+    
     private lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
@@ -27,10 +29,12 @@ class PagingView: UIView {
         return collectionView
     }()
     
-    init(categoryTitleList: [String]) {
+    init(categoryTitleList: [String], pagingTabBar: PagingTabBar) {
         self.categoryTitleList = categoryTitleList
+        self.pagingTabBar = pagingTabBar
         super.init(frame: .zero)
         setupLayout()
+        pagingTabBar.delegate = self
     }
     
     required init?(coder: NSCoder) {
@@ -62,6 +66,12 @@ extension PagingView: UICollectionViewDataSource {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PagingCollectionViewCell.identifier, for: indexPath) as? PagingCollectionViewCell else { return UICollectionViewCell() }
         cell.setupView(title: categoryTitleList[indexPath.row])
         return cell
+    }
+}
+
+extension PagingView: PagingDelegate {
+    func didTapPagingTabBarCell(scrollTo indexPath: IndexPath) {
+        collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: false)
     }
 }
 
