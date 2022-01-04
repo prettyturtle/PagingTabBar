@@ -17,6 +17,7 @@
 		6B889B7B2784130B00E7FDF7 /* PagingTabBarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B889B7A2784130B00E7FDF7 /* PagingTabBarCell.swift */; };
 		6B889B7F278428BC00E7FDF7 /* PagingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B889B7E278428BC00E7FDF7 /* PagingView.swift */; };
 		6B889B8227842A9A00E7FDF7 /* PagingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B889B8127842A9A00E7FDF7 /* PagingCollectionViewCell.swift */; };
+		6B889B85278443FE00E7FDF7 /* resultImage.gif in Resources */ = {isa = PBXBuildFile; fileRef = 6B889B84278443FE00E7FDF7 /* resultImage.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,8 @@
 		6B889B7A2784130B00E7FDF7 /* PagingTabBarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingTabBarCell.swift; sourceTree = "<group>"; };
 		6B889B7E278428BC00E7FDF7 /* PagingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingView.swift; sourceTree = "<group>"; };
 		6B889B8127842A9A00E7FDF7 /* PagingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagingCollectionViewCell.swift; sourceTree = "<group>"; };
+		6B889B832784429500E7FDF7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6B889B84278443FE00E7FDF7 /* resultImage.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = resultImage.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +51,8 @@
 		6B889B5527840E5B00E7FDF7 = {
 			isa = PBXGroup;
 			children = (
+				6B889B832784429500E7FDF7 /* README.md */,
+				6B889B84278443FE00E7FDF7 /* resultImage.gif */,
 				6B889B6027840E5B00E7FDF7 /* PagingTabBar */,
 				6B889B5F27840E5B00E7FDF7 /* Products */,
 			);
@@ -166,6 +171,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B889B85278443FE00E7FDF7 /* resultImage.gif in Resources */,
 				6B889B6E27840E5D00E7FDF7 /* LaunchScreen.storyboard in Resources */,
 				6B889B6B27840E5D00E7FDF7 /* Assets.xcassets in Resources */,
 			);
